@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+label{
+    font-weight: bold
+}
+
+html {
+    text-align: center
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}

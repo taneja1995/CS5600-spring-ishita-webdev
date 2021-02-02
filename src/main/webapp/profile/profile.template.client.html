@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="profile.style.client.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Profile</h1>
+
+    <div class="alert alert-success" role="alert">
+        Yay!!!
+    </div>
+
+    <div class="mb-3 row">
+        <label
+                class="col-sm-2 col-form-label">
+            Username
+        </label>
+        <div class="col-sm-10">
+            <input type="username" class="form-control"  id="inputUser" placeholder="Ishita Taneja" readonly>
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">
+            Password
+        </label>
+        <div class="col-sm-10">
+            <input type="password"
+                   class="form-control"
+                   id="inputPassword">
+        </div>
+    </div>
+
+
+    <div class="mb-3 row">
+        <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+        <div class="col-sm-10">
+            <input type="phone" class="form-control" id="phone" placeholder="+1 (657) 767 9876">
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="xyz@edu.com">
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label for="role" class="col-sm-2 col-form-label">Role</label>
+        <div class="col-sm-10">
+            <select id="role" class="form-control" disabled>
+                <option>Faculty</option>
+                <option>Student</option>
+                <option>Staff</option>
+            </select>
+            <!--<input type="role" class="form-control" id="role">-->
+
+        </div>
+    </div>
+
+
+    <div class="mb-3 row">
+        <label for="dateOfBirth" class="col-sm-2 col-form-label">Date of Birth</label>
+        <div class="col-sm-10">
+            <input type="date" class="form-control" id="dateOfBirth">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <label  class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <a class="btn btn-success btn-block ">
+                Update
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <label  class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <a class="btn btn-danger btn-block"
+               href="../index.html">
+                Logout
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
