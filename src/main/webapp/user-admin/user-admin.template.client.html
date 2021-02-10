@@ -16,8 +16,7 @@
 <body>
 <div class="container-fluid">
     <h1>User Admin</h1>
-
-    <table class="table">
+    <table class="table table-stripped">
         <thead>
         <tr>
             <th>Username</th>
@@ -26,47 +25,46 @@
             <th>Last Name</th>
             <th>Role</th>
             <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
         </tr>
-        <tr class="wbdv-form">
-            <td><input  class="form-control wbdv-username-fld"
+        <tr>
+            <th>
+                <input type="text" class="form-control wbdv-username-fld"
                        placeholder="Username" />
-            </td>
-            <td><input type="password" class="form-control wbdv-password-fld"
+            </th>
+            <th>
+                <input type="password" class="form-control wbdv-password-fld"
                        placeholder="Password" />
-            </td>
-            <td><input  class="form-control wbdv-firstName-fld"
+            </th>
+            <th>
+                <input type="text" class="form-control wbdv-firstName-fld"
                        placeholder="First Name" />
-            </td>
-            <td><input  class="form-control wbdv-lastName-fld"
+            </th>
+            <th><input type="text" class="form-control wbdv-lastName-fld"
                        placeholder="Last Name" />
-            </td>
-            <td><select  class="form-control wbdv-role-fld">
-                <option value=""> Choose Role </option>
+            </th>
+            <th>
+                <select  class="form-control wbdv-role-fld">
+                <option value=""> Choose a role </option>
                 <option value="FACULTY">Faculty</option>
                 <option value="STUDENT">Student</option>
                 <option value="ADMIN">Admin</option>
             </select>
-            </td>
-            <td>
-                <span class="pull-right" style="white-space: nowrap">
-                    <i>  </i>
-                    <i>  </i>
-                    <i>  </i>
-                    <i>  </i>
-      <i  class="fa-1x fa fa-search wbdv-search"></i>
-                    <i> </i>
-      <i class="fa-1x fa fa-plus wbdv-create" id="create-button"></i>
-                    <i> </i>
-      <i class="fa-1x fa fa-check wbdv-update"></i>
-          </span>
-            </td>
+            </th>
+            <th>
+               <i  class="fa-1x fa fa-search wbdv-search"></i>
+           </th>
+            <th>
+                <i class="fa-1x fa fa-plus wbdv-create" id="create-button"></i>
+            </th>
+            <th>
+                <i class="fa-1x fa fa-check wbdv-update"></i>
+            </th>
         </tr>
         </thead>
-
-
-        <tbody class="wbdv-tbody">
+        <tbody>
         </tbody>
-
     </table>
 </div>
 </body>

@@ -20,7 +20,8 @@ function UserServiceClient() {
     }
 
     function findAllUsers() {
-        return fetch(self.url)
+        return fetch(self.url,
+            {method: 'GET'})
             .then(function (response) {
                 return response.json()
             })

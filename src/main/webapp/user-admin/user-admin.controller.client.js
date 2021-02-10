@@ -65,17 +65,9 @@ for( var i=0; i<users.length; i++) {
             <td>${user.firstName}</td>
             <td>${user.lastName}</td>
             <td>${user.role}</td>
-            <td class="wbdv-actions">
-        <span class="pull-right" style="white-space: nowrap">
-             <i>&nbsp;</i>
-             <i>&nbsp;</i>
-             <i>&nbsp;</i>
-             <i>&nbsp;</i>
-             <i>&nbsp;</i>
-          <i class="fa-1x fa fa-times wbdv-remove" id="${i}"></i>
-          <i class="fa-1x fa fa-pencil wbdv-edit" id="${user._id}"></i>
-        </span>
-            </td>
+            <td>&nbsp;</td>
+          <td><i class="fa-1x fa fa-times wbdv-remove" id="${i}"></i></td>
+          <td><i class="fa-1x fa fa-pencil wbdv-edit" id="${user._id}"></i></td>
         </tr>`)
 }
     jQuery(".wbdv-remove")
@@ -104,7 +96,7 @@ function updateUser(){
     $roleFld.val("")
 }
 
-function init() {
+function main() {
     $usernameFld = $(".wbdv-username-fld")
     $passwordFld = $(".wbdv-password-fld")
     $firstNameFld = $(".wbdv-firstName-fld")
@@ -141,7 +133,7 @@ function init() {
 
         })
 }
-jQuery(init)
+jQuery(main)
 
 
 
