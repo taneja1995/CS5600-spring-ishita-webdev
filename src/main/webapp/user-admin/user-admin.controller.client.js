@@ -72,8 +72,8 @@ for( var i=0; i<users.length; i++) {
              <i>&nbsp;</i>
              <i>&nbsp;</i>
              <i>&nbsp;</i>
-          <i class="fa-2x fa fa-times wbdv-remove" id="${i}"></i>
-          <i class="fa-2x fa fa-pencil wbdv-edit" id="${user._id}"></i>
+          <i class="fa-1x fa fa-times wbdv-remove" id="${i}"></i>
+          <i class="fa-1x fa fa-pencil wbdv-edit" id="${user._id}"></i>
         </span>
             </td>
         </tr>`)
@@ -97,6 +97,11 @@ function updateUser(){
             users[index] = selectedUser
             renderUsers(users)
         })
+    $usernameFld.val("")
+    $passwordFld.val("")
+    $firstNameFld.val("")
+    $lastNameFld.val("")
+    $roleFld.val("")
 }
 
 function init() {
@@ -125,6 +130,7 @@ function init() {
             $passwordFld.val("")
             $firstNameFld.val("")
             $lastNameFld.val("")
+            $roleFld.val("")
         }
     )
 

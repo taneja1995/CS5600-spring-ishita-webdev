@@ -6,11 +6,11 @@
     <link rel="stylesheet" href=
             "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-    <!--<link href="user-admin.style.client.css" rel="stylesheet" />-->
+    <link href="user-admin.style.client.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="../services/user.service.client.js"></script>
-    <script src="user-admin.controller.client.js"></script>
+    <script src="../user-admin/user-admin.controller.client.js"></script>
 
 </head>
 <body>
@@ -31,7 +31,7 @@
             <td><input  class="form-control wbdv-username-fld"
                        placeholder="Username" />
             </td>
-            <td><input class="form-control wbdv-password-fld"
+            <td><input type="password" class="form-control wbdv-password-fld"
                        placeholder="Password" />
             </td>
             <td><input  class="form-control wbdv-firstName-fld"
@@ -41,6 +41,7 @@
                        placeholder="Last Name" />
             </td>
             <td><select  class="form-control wbdv-role-fld">
+                <option value=""> Choose Role </option>
                 <option value="FACULTY">Faculty</option>
                 <option value="STUDENT">Student</option>
                 <option value="ADMIN">Admin</option>
@@ -48,9 +49,15 @@
             </td>
             <td>
                 <span class="pull-right" style="white-space: nowrap">
-      <i  class="fa-2x fa fa-search wbdv-search"></i>
-      <i class="fa-2x fa fa-plus wbdv-create" id="create-button"></i>
-      <i class="fa-2x fa fa-check wbdv-update"></i>
+                    <i>  </i>
+                    <i>  </i>
+                    <i>  </i>
+                    <i>  </i>
+      <i  class="fa-1x fa fa-search wbdv-search"></i>
+                    <i> </i>
+      <i class="fa-1x fa fa-plus wbdv-create" id="create-button"></i>
+                    <i> </i>
+      <i class="fa-1x fa fa-check wbdv-update"></i>
           </span>
             </td>
         </tr>
@@ -58,27 +65,7 @@
 
 
         <tbody class="wbdv-tbody">
-        <!--<tr>
-            <td class="wbdv-username">ada</td>
-            <td>&nbsp;</td>
-            <td class="wbdv-first-name">Ada</td>
-            <td class="wbdv-last-name">Lovelace</td>
-            <td class="wbdv-role">FACULTY</td>
-
-            <td class="wbdv-actions">
-        <span class="pull-right" style="white-space: nowrap">
-            <i>&nbsp;</i>
-             <i>&nbsp;</i>
-             <i>&nbsp;</i>
-             <i>&nbsp;</i>
-             <i>&nbsp;</i>
-          <i class="fa-2x fa fa-times wbdv-remove" id="wbdv-remove"></i>
-          <i class="fa-2x fa fa-pencil wbdv-edit"></i>
-        </span>
-            </td>
-        </tr>-->
         </tbody>
-
 
     </table>
 </div>
