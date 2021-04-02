@@ -1,17 +1,36 @@
 package com.example.wbdvsp2101ishitajavaserver.models;
+import javax.persistence.*;
 
+@Entity
+@Table(name="widgets")
 public class Widget {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
-    private String name;
     private String type;
     private Integer size;
     private String text;
-    private Integer widgetOrder;
-    private String url;
+    private String src;
     private Integer width, height;
-    private String cssClass;
-    private String style;
-    private String value;
+    private Boolean ordered;
+    private String url;
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public Boolean getOrdered() {
+        return ordered;
+    }
+
+    public void setOrdered(Boolean ordered) {
+        this.ordered = ordered;
+    }
 
     public String getName() {
         return name;
@@ -20,21 +39,15 @@ public class Widget {
     public void setName(String name) {
         this.name = name;
     }
+    private String name;
 
-    public Integer getWidgetOrder() {
-        return widgetOrder;
+
+    public String getSrc() {
+        return src;
     }
 
-    public void setWidgetOrder(Integer widgetOrder) {
-        this.widgetOrder = widgetOrder;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
+    public void setSrc(String src) {
+        this.src = src;
     }
 
     public Integer getWidth() {
@@ -51,30 +64,6 @@ public class Widget {
 
     public void setHeight(Integer height) {
         this.height = height;
-    }
-
-    public String getCssClass() {
-        return cssClass;
-    }
-
-    public void setCssClass(String cssClass) {
-        this.cssClass = cssClass;
-    }
-
-    public String getStyle() {
-        return style;
-    }
-
-    public void setStyle(String style) {
-        this.style = style;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
     }
 
     public String getTopicId() {
@@ -130,3 +119,22 @@ public class Widget {
         this.text = text;
     }
 }
+
+
+   /* create table widgets (
+        id bigint not null auto_increment,
+        height integer,
+        ordered bit not null,
+        size integer,
+        src varchar(255),
+    text varchar(255),
+    topic_id varchar(255),
+    type varchar(255),
+    width integer,
+    primary key (id)
+    ) engine=InnoDB
+
+
+       alter table widgets
+       add column name varchar(255)
+*/
